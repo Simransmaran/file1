@@ -1,0 +1,2466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav{
+        max-width: 1910px;
+        height:70px;
+        border: 1ps solid #ECF2F9;
+        background: #ECF2F9;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap: 1.65rem;
+        padding-left: 20px;
+    }
+    .nav-items{
+        display: none;
+        font-size: 1rem;
+        gap:1rem ;
+        justify-content: right;
+        align-items: right;
+        padding-left: 8rem;
+    }
+    @media screen and (min-width:700px) {
+      .nav-items{
+      display:block;
+      }
+      
+    }
+    .logo-text{
+        color: #0061E0;
+        font-size: 2rem;
+        padding-left: 5px;
+        padding-bottom: 30px;
+        margin-top: 2rem;
+        font-weight: bolder;
+        font-style:initial;
+        
+    }
+    
+    
+    .start-button{
+        background-color: #0061E0;
+        color:white;
+        padding: 15px;
+        border: 1px solid blue;
+        border-radius:1px;
+        width: 150px;
+    }
+    .links{
+        color: gray;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .link{
+        font-size: 1rem;
+    }
+    .logo-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    /* hero section */
+    .hero-container{
+            border: 1ps solid #F4F9FF;
+            background: #F4F9FF;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 1310px;
+            height: 100%;
+            gap: 0.5rem;
+            margin-left: 6rem;
+        }
+        .left-container{
+            max-width: 50%;
+            margin-left:18rem;
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height: 80%;
+            animation: slideFromLeft 1s ease forwards;
+        }
+        @keyframes slideFromLeft{
+           0%{
+             opacity: 0;
+             transform: translateX(-100%);
+           }
+          100%{
+             opacity: 1;
+             transform: translateX(0);
+           }
+
+        }
+         .left-heading{
+            max-width: 400px;
+            font-weight:700;
+            font-size: 45px;
+         }
+         .left-desc{
+            max-width:395px;
+            margin-top: 0.5rem;
+            color: #7C8893;
+            font-size: 0.75rem;
+
+
+         }
+        .enquiry-btn{
+        background-color: #0061E0;
+        color:white;
+        padding: 15px;
+        border: 1px solid blue;
+        border-radius:1px;
+        font-size: 0.55rem;
+        width: 150px;
+    }
+    .right-container{
+            max-width: 50%;
+            margin-left:18rem;
+            margin-top: 5rem;
+            margin: 2rem;
+            height: 80%;
+            
+    }
+    .home-img{
+        padding-right: 14rem;
+        width: 35rem;
+        height:20rem;
+        top: 16px;
+        left: 17px;
+    }
+    .right-text{
+      position: absolute;
+        bottom: 110px;
+        left: 890px;
+        top: 350px;
+        background-color: white;
+        border: 1px solid white;
+        box-shadow: 1px 1px 1px lightgrey;
+        width: 185px;
+        height: 120px;
+        padding-top:1rem;
+        font-size: 0.75rem;
+        text-align: center;
+        color:#7C8893 ;
+    }
+    @media screen and(max-width:699px){
+      .custom{
+       display: none;
+      }
+      .right-text{
+        display: none;
+      }
+    } 
+    .plus{
+        color: #0061E0;
+        font-size: 1.5rem;
+        font-weight:900;
+    }
+    .detail-btn{
+        border: 1px solid blue;
+        background-color: #0061E0;
+        color: white;
+        padding: 6px;
+        font-size: 0.55rem;
+        margin-top: 0.75rem;
+
+    }
+    .custom{
+      position: absolute;
+        top:150px;
+        left: 1080px ;
+        background-color: white;
+        border: 2px solid white;
+        box-shadow: 1px 1px 1px lightgrey;
+        width: 170px;
+        height: 35px;    
+    }
+    .star-hero{
+      height: 20px;
+      width: 20px;
+    }
+    .custom-text{
+        color:#7C8893 ;
+        /* padding:0.5rem; */
+        font-size: 0.8rem;
+        text-align: center;
+        
+    }
+    
+    
+    /*  search section */
+    .search-container{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: 2rem;
+            border: 1px solid #F4F9FF;
+            /* background:#F4F9FF; */
+            width:800px;
+            margin-left:10rem;
+            
+        }
+        .search-content{
+            padding-top: 18px;
+            padding-left: 20px;
+            display: flex;
+            max-width: 1500px;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            height: 90px;
+            color: lightgrey;
+            background-color: white;
+            margin-top: 4rem;
+            margin-left: 25rem;
+            box-shadow: 3px 3px 0.5px 0.5px lightgrey;
+           
+        }
+    
+        .img1{
+            width: 20px;
+            height:20px;
+        }
+        #loc{
+            
+            font-size: 0.75rem;
+            width: 150px;
+            height: 30px;
+            border: 1px solid  #0061E0;
+            color:  #0061E0;
+        }
+        #rooms{
+            font-size: 0.75rem;
+            width: 150px;
+            height: 30px;
+            color:gray;
+        }
+        #rent{
+            font-size: 0.75rem;
+            width: 150px;
+            height: 30px;
+            color:gray;
+        }
+        .button-section{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background-color:blue;
+            font-size: 0.75rem;
+            width: 150px;
+            height: 30px;
+            padding-right: 0.5rem;
+            gap: 1rem;
+            
+        }
+        .btn-search{
+            color: white;
+        }
+        /* feature section */
+        .about-us{
+            margin-top: 0.5rem;
+            margin-right: 6rem;
+            border: 1ps solid black;
+            background: #F4F9FF;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            max-width: 1910px;
+            height:700px;
+            overflow: hidden;
+            gap: 0.5rem;
+        }
+        @media screen  and(max-width:699px)
+        {
+          .about-us{
+            display: flex;
+            flex-direction: column;
+          }
+          
+        }
+        .about-left{
+            max-width: 40%;
+            margin-left:18rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height: 50%;
+        }
+        .left-text{
+         position: absolute;
+        bottom: 50px;
+        left: 400px;
+        top: 1100px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 7px;
+        box-shadow: 1px 1px 10px 1px   lightgrey;
+        width: 140px;
+        height: 160px;
+        padding-top:1rem;
+        font-size: 0.75rem;
+        text-align: left;
+        line-height: 1rem;
+        }
+        .stairs-img{
+            height: 30rem;
+            width: 16rem;
+        }
+        .img-trophy{
+            height:3.5rem;
+            width: 3.5rem;
+            padding-left: 1rem;
+        }
+        .award{
+            font-size: 1rem;
+            font-weight: 700;
+            padding-bottom: 1rem;
+            padding-top: 0.5rem;
+        }
+        .analysis{
+            color:#7C8893 ;
+            font-size: 0.75rem;
+            padding-bottom: 1rem;
+        }
+        .about-right{
+         display: flex;
+         flex-direction: column;
+            max-width: 35%;
+            margin-left:6.5rem;
+            gap: 2rem;
+            height: 40%;
+            margin-bottom: 5rem;
+        }
+        .about-heading{
+            max-width: 80%;
+            font-weight: 800;
+            font:serif;
+        }
+        .about-para{
+            max-width: 50%;
+            font-size: 0.75rem;
+            max-width: 50%;
+            color:#7C8893 ;
+        }
+
+        .aboutanchor{
+           
+            text-decoration: none;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .feature1 p{
+            font-size: 0.75rem;
+            max-width: 60%;
+            color:#7C8893 ;
+        }
+        .feature2 p{
+            font-size: 0.75rem;
+            max-width: 60%;
+            color:#7C8893 ;
+        }
+        .learnmore{
+            font-size: 0.75rem;
+            margin-bottom:1.5rem;
+            text-decoration: none;
+        }
+        /* Service-section */
+        .service-container{
+            margin-left: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:600px ;
+            width: 900px;
+            overflow: hidden;
+            /* gap: 1rem; */
+            border: 1px solid white;
+        }
+        .service-heading{
+            margin-bottom:1rem;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .heading1{
+            color: #0061E0;
+            text-align: center;
+            font-size: 0.65rem;
+        }
+        .service-card{
+          
+            margin-bottom:6rem;
+            display: flex;
+            max-width:1920px ;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            border: 1px solid white;    
+        }
+        .service-card1,.service-card2,.service-card3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 190px;
+            height: 240px;
+            border: 1px solid white;
+            box-shadow: 1px 1px 10px  gray;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 0.5rem;       
+        }
+           .service-icons{
+            align-items: center;
+            height:3.5rem;
+            width: 3.5rem;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            object-fit:fill;
+        }
+        .card-headings{
+            margin-top: 0.5rem;
+            font-size: 1.35rem;
+            color: black;
+            font-weight: bold;
+        }
+        .card-headings1{
+            font-size: 1.35rem;
+            color: blue;
+        }
+        .service-para{
+            margin-top: 0.25rem;
+            padding-left: 1.75rem;
+            font-size: 0.65rem;
+            max-width: 85%;
+            color: gray;
+        }
+        .arrow{
+            text-align: left;
+            padding-left:2rem;
+            padding-top: 1.5rem;
+            font-size: 0.75rem;
+        }
+        .services-group{
+            /* padding-top: 1.5rem; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+            height: 300px;
+            gap: 5rem;
+            opacity: 0px;
+            background: #E2EFFF;
+            border: 1px solid white;
+            /* margin-bottom:10rem; */
+         
+        }
+        .group-icons{
+            margin-top: 1rem;
+            height: 60px;
+            width: 60px;
+        }
+        .group-headings{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .group-para{
+            font-size: 0.55rem;
+            color:gray;
+        }
+ /* agent -container */
+ .agent-container{
+    margin-left: 15rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:869px ;
+            width: 1000px;
+            overflow: hidden;
+            /* gap: 1rem; */
+            border: 1px solid white;
+            /* margin-bottom: 14rem; */
+        }
+        .agent-heading{
+            /* margin-bottom:1rem; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           
+        }
+        .agent-heading1{
+            color: #0061E0;
+            text-align: center;
+            font-size:0.5rem;
+        }
+        .agent-head{
+           font-weight: 800;
+        }
+        .agent-card{
+          /* margin-bottom:8rem; */
+          display: flex;
+          /* flex-direction: column; */
+          height:395px ;
+          width:280px;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          border: 1px solid white;
+      }
+      .profile1,.profile2,.profile3,.profile4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 175px;
+            height: 285px;
+            border: 1px solid white;
+            box-shadow: 1px 1px 10px  gray;
+            text-align: center;
+        }
+        .agent-img1{
+           padding: 0.45rem;
+            align-items: center;
+            width: 175px;
+            height: 200px;
+            background-color: white;
+            border: none;   
+        }
+        .agent-img2{
+            padding: 0.45rem;
+            align-items: center;
+            width: 175px;
+            height: 195px;
+            background-color: white;
+            border: none;   
+        }
+        .agent-img3{
+            padding: 0.45rem;
+            align-items: center;
+            width: 175px;
+            height: 200px;
+            background-color: white;
+            border: none;   
+        }
+        .agent-img4{
+            /* padding: 0.45rem; */
+            align-items: center;
+            width: 165px;
+            height: 165px;
+            /* margin-bottom: 1rem; */
+            background-color: white;
+            border: none;   
+        }
+        
+        .agent-sticky1{
+           position: absolute;
+           top: 2350px;
+           left:382px;
+           font-size: 0.5rem;
+           box-shadow: 1px 1px 10px lightgray;
+        }
+       .sticky-text1{
+        background-color: white;
+        
+        border: 1px solid white;
+        color: rgb(73, 73, 253);
+        font-size:0.75rem;  
+        padding: 0.25rem;      
+        }
+        .agent-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            padding-right: 4rem;
+            gap: 0.5rem;
+            /* align-items: left; */
+        }
+        .agent-h{
+            /* padding-right: 1rem; */
+            align-items: left;
+            font-size: 1rem;
+           
+        }
+        .agent-p{
+            /* padding-right: 2rem; */
+            font-size: 0.55rem;
+            color: gray;
+        }
+        .call-area{
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            padding-right: 3.5rem;
+        }
+        .call-icon{
+            height: 12px;
+            width: 12px;
+        }
+        .number{
+            font-size: 0.5rem;
+        }
+        
+        .agent-group{
+            margin-top: 2rem;
+            padding:1rem;
+            display: flex;
+            justify-content:left;
+            align-items: left;
+            width: 935px;
+            height: 100px;
+            gap: 2rem;
+            opacity: 0px;
+            background: #E2EFFF;
+            border: 1px solid white;
+            /* margin-bottom:1rem; */
+        }
+        .people-icon{
+            height: 4rem;
+            width: 4rem;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            margin-right:7rem;
+        }
+        .agenth{
+            font-weight: 800;
+            font-size:1.5rem
+             }
+        .agentp
+          {
+            color: gray;
+           font-size:0.75rem;
+           }
+        
+        .join-btn{
+            color:white;
+            background-color: blue ;
+            border: none;
+            height: 40px;
+            width:90px ;
+            margin-left:12rem;
+            margin-top: 1rem;
+        }
+        /* featured-listing */
+        .featured-listening{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 950.2px;
+          height:950.9px;
+          top: 4153px;
+          left: 375px;
+          gap: 1px;
+          overflow: hidden;
+          opacity: 0px;
+          margin-left: 18rem;
+        }
+        .h4-text{
+          max-width: 80%;
+          color: #0061E0;
+          font-size: 0.65rem;
+          text-align: center;
+        }
+        .h2-text{
+          font-size: 2rem;
+          max-width: 80%;
+          text-align: center;
+
+        }
+        .home-cards{
+         
+          width: 810.2px;
+          height: 850.9px;
+          grid-gap: 0.25rem;
+          display: grid;
+          border: 1px solid white ;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(2,1fr);
+          background-color:white;
+         
+        }
+
+        .home-card1{
+          /* margin-top: 1rem; */
+          margin-left: 0.6rem;
+          height: 380px;
+          width: 240px; 
+          border: 1px solid white;
+          box-shadow: 1px 1px 8px gray;
+        }
+        .for-sale{
+          position: absolute;
+          background: #0D263B;
+          color: white;
+          font-size: 0.85rem;
+          top:2930px ;
+          left:380px ;
+          padding: 0.2rem;
+
+        }
+        .home-pics{
+          height: 210px;
+          width: 240px;
+        }
+        hr{
+          background-color: lightgrey;
+        }
+        .detail-section{
+           display: flex;
+          flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 42px;
+          
+        }
+        .home-head{
+          font-size: 0.75rem;
+        }
+        .vector{
+          height: 0.65rem;
+          width: 0.45rem;
+        }
+        .loc-text{
+        position: relative;
+        bottom: 1px;
+        
+        }
+        .sec{
+          font-size: 0.65rem;
+          color: gray;
+        }
+        .detail-section-1{
+          display: flex;
+          flex-direction: column;
+          gap: 1.115rem;
+          padding-left:0.45rem;
+          
+        }
+        .detail-section-a{
+          display: flex;
+          padding-left: 1rem;
+
+          font-size: 0.55rem;
+          gap: 1rem;
+          color: gray;
+        }
+        .detail-section-b{
+          display: flex;
+          font-size: 0.55rem;
+          gap: 1rem;
+          padding-left: 1rem;
+          color: gray;
+        }
+        .detail-section-2{
+          display: flex;
+          gap: 0.6rem;
+          padding-left:0.6rem;
+
+        }
+        .detail-section-c{
+          display: flex;
+          font-size: 0.55rem;
+          padding-left: 1rem;
+          gap: 1rem;
+          color: gray;
+          margin-top: 0.75rem;
+        }
+        .rent-btn{
+          margin-top: 0.445rem;
+          color: white ;
+          font-size: 1rem;
+          font-weight: 600;
+          background: #0061E0;
+          border: none;
+          height:41px;
+          width: 240px;
+
+        }
+        .b-icons{
+          height: 0.75rem;
+          width: 0.75rem;
+
+        }
+        .b1-icons{
+          height: 0.75rem;
+          width: 0.75rem;
+          /* padding-left: 0.222rem; */
+          margin-left: 1.5rem;
+
+        }
+        .b2-text{
+          padding-top: 0.2225rem;
+        }
+        .b2-icons{
+          padding-left: 0.545rem;
+        }
+        .b3-text{
+          padding-top: 0.11rem;
+
+        }
+        @media screen  and (max-width:800px){
+          .home-cards{
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 0.5rem;
+            padding: 1rem;
+            align-items: center;
+            width: 950.2px;
+            height:1600.9px;
+          }
+          
+        }
+        /*Testimonial section*/
+        .testimonial-container{
+            display: flex;
+            flex-direction: column;
+            /* gap: 1rem; */
+            justify-content: center;
+            align-items: center;
+            width: 1100px;
+            max-height:800px;
+            background: #E9F3FF;
+            margin-left: 12rem;
+            margin-top: 2rem;
+        }
+        
+        .quote-up{
+            height: 57px;
+            width: 60px;
+            opacity: 20%;
+            padding-right: 50rem;
+            position: absolute;
+            left:1500px;
+            top: 1500px;
+        }
+        .quote-down{
+            height: 57px;
+            width: 60px;
+            opacity: 20%;
+            position: absolute;
+            /* left:80px; */
+            top: 3500px;
+            right:1300px;
+            /* padding-right: 15rem; */
+        }
+        .circle-section{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 3.5rem;
+        }
+        .circle1{
+            width:10px ;
+            height:10px ;
+            background-origin: 5px solid blue;
+        }
+        .circle2{
+            width: 8px;
+            height: 8px;
+        }
+        .test-h3{
+            padding-top: 3rem;
+            font-size: 0.65rem;
+            color:#0061E0 ;
+        }
+        .test-h2{
+            font-size: 1.75rem;
+        }
+        .testimonial-cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 4rem;
+            margin-top: 0.5rem;
+        }
+        @media screen  and(max-width:700px){
+          .testimonial-cards{
+            flex-direction:column;
+          }
+        }
+        .class-1{
+            margin-top: 1rem;
+            width: 340px;
+            height: 259px;
+            top: 5911px;
+            left: 379px;
+            gap: 0px;
+            border-radius: 15px 0px 0px 0px;
+            opacity: 0px;    
+        }
+        .class-1a{
+            border: 1px solid white;
+            background-color: white;
+            width: 263px;
+            height:150px;
+            top: 5911px;
+            left: 379px;
+            gap: 0px;
+            border-radius: 15px 15px 15px 15px;
+            opacity: 0px;
+            
+
+        }
+        .class-btext{
+            margin: 2rem;
+            top: 5911px;
+            text-align: left;
+            width: 263px;
+            height:150px;
+            gap: 0px;
+            left: 379px;
+            opacity: 0px;
+            
+            max-width: 60%;
+            color: gray;
+            font-size: 0.75rem;
+        }
+       
+
+        /* property section */
+        .properties-container{
+        display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 810.2px;
+          height:580.9px;
+          top: 4153px;
+          left: 375px;
+          gap: 1px;
+          overflow: hidden;
+          opacity: 0px;
+          margin-left: 22rem;
+
+      }
+      .property-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .property-head h3{
+        color: #0061E0;
+        font-size: 0.75rem;
+
+      }
+      .property-head h2{
+        font-size:2rem;
+
+      }
+      .property-card{
+        width: 810.2px;
+          height: 850.9px;
+          grid-gap: 0.25rem;
+          display: grid;
+          border: 1px solid white ;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(1,1fr);
+          background-color:white;
+      }
+      @media screen  and(max-width:699px){
+        .property-card{
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(2,1fr);
+        }
+        
+      }
+      .property-card1{
+        margin-left: 0.6rem;
+          height: 370px;
+          width: 240px; 
+          border: 1px solid white;
+          box-shadow: 1px 1px 8px gray;
+      }
+      .property-img{
+        height: 210px;
+        width: 240px;
+      }
+      .property-headings{
+       position: relative;
+        padding-left: 0.5rem;
+
+      }
+      .property-headings-1{
+        padding-top: 1rem;
+        text-decoration: underline;
+        font-weight: 600;
+         color: #0061E0;
+         font-size: 0.85rem;
+      }
+      .property-headings-2{
+         font-size: 0.55rem;
+         color: gray;
+      }
+      .property-headings-3{
+        padding-top: 1rem;
+         color: #0061E0;
+         font-size:0.85rem;
+      }
+      .customer-1{
+        border:1ps solid black;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+      }
+      .property-img-text{
+        font-size: 0.65rem;
+        color: gray;
+        padding-left: 0.5rem;
+      }
+      .property-footer{
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        margin-left: 0.5rem;
+        
+      }
+      .customer-1-name{
+        padding-left: 0.5rem;
+        font-size: 0.75rem;
+        color: #0061E0;
+      }
+      .customer-1-name1{
+        padding-left: 0.45rem;
+        font-size: 0.75rem;
+        /* color: #0061E0; */
+      }
+      .customer-1-work{
+        font-size: 0.55rem;
+        color: gray;
+        padding-top: 0.5rem;
+        /* padding-right: 1rem; */
+       
+      }
+      .working{
+        position: relative;
+        bottom: 4px;
+      }
+      .working h5{
+        position: absolute;
+        top: 3px;
+        padding-left: 7px;
+      }
+     .p-circle{
+      
+       display: flex;
+       gap: 1rem;
+       justify-content: center;
+       align-items: center;
+     }
+     .p1{
+      background-color: blue;
+     }
+
+     /* PARTNERS-SECTION */
+     .partner-container
+     {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 970px;
+      height: 350px;
+      margin-left:17rem ;
+     
+     }
+     @media screen  and (max-width:699px){
+      .partner-container{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      
+     }
+     .part1,.part2,.part3,.part4, .part5 {
+      color: lightgrey;
+      font-style:normal;
+      font-family: monospace;
+      font-weight: 800;
+      font-size:2rem;
+      border: 1px solid whitesmoke;
+
+      height: 170px;
+      width: 180px;
+      background-color: white;
+     }
+     .partner-images1{ margin-left:4rem;}
+     .partner-images5{ 
+      height: 58px;
+      width: 180px;
+     }
+     .partner-images{ width: 180px;}
+     .part-h2{
+      color: lightgrey;
+      font-style:normal;
+      font-family: monospace;
+      font-weight: 800;
+      font-size:2rem;
+     }
+     .part1,.part2,.part3,.part4,.part5 h5{
+      color: lightgrey;
+      font-style:normal;
+      font-family: monospace;
+      font-weight: 800;
+      font-size:0.65rem;
+      position: relative;
+     }
+     /* facilities -section */
+     .facilities-container{
+         display: flex; 
+          justify-content: center;
+          align-items: center;
+          width: 810.2px;
+          height:800.9px;
+          /* top: 4153px; */
+          left: 375px;
+          gap: 2.5rem;
+          overflow: hidden;
+          opacity: 0px;
+          margin-left: 25rem;
+          border: 1px solid white;
+     }
+     @media screen  and (max-width:600px){
+      .facilities-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+      }
+      
+    }
+    @media screen  and (min-width:600px){
+      .facility-img1{
+        position: absolute;
+          top: 1295px;
+          left: 455px;
+      }
+    }
+
+     .facility-left{
+            width: 405px;
+            /* margin-left:18rem;
+            margin-top: 5rem; */
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height:380.9px;
+     }
+     .facility-right{
+      margin-top: 8.75rem;
+        width: 405.2px;
+        height:585.9px;   
+        margin-left: 2rem;   
+     }
+     .facility-img{
+            width: 100%;
+            /* margin-left:18rem;
+            margin-top: 5rem;
+            margin: 2rem; */
+            height: 100%;
+     }
+     .facility-img1{
+          
+          height: 50px;
+          width: 50px;
+         display: none;
+     }
+     .f1{
+      margin-top: 1rem;
+      color:#0061E0;
+      font-size: 0.75rem;
+     }
+     .f2{
+      font-size: 2rem;
+      font-weight: 800;
+     }
+     .f3{
+      color: gray;
+      font-size: 0.75rem;
+      max-width:75%;
+     }
+     .list-of-facilities{
+      display: flex;
+       margin-top: 2.5rem;
+       justify-content:left;
+       gap: 1rem;
+       align-items: left;
+       line-height: 2rem;
+       margin-right: 1rem;
+       color: gray;
+       font-size: 1rem;
+     }
+     /* .list-of-facilities-1{
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      
+     } */
+     ul{
+      list-style-type: circle;
+     }
+     .read-more{
+      margin-top: 2rem;
+      color: blue;
+     }
+     .facility-img1{
+      
+     }
+     /* blog section */
+     .blog-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 950.2px;
+          height: 1000.9px;
+          top: 4153px;
+          left: 375px;
+          gap: 1px;
+          overflow: hidden;
+          opacity: 0px;
+          margin-left: 18rem;
+          margin-top: 2rem;
+        }
+        .blog-text{
+          max-width: 100%;
+          color: #0061E0;
+          font-size: 0.65rem;
+          text-align: center;
+          margin-top: 1rem;
+        }
+        .blog-h2{
+          font-size: 2.5rem;
+          text-align: center;
+
+        }
+     .blog-cards{
+         
+         width: 810.2px;
+         height: 750.9px;
+         grid-gap: 0.25rem;
+         display: grid;
+         border: 1px solid white ;
+         grid-template-columns: repeat(3,1fr);
+         grid-template-rows: repeat(2,1fr);
+         background-color:white;
+       }
+       @media screen  and (max-width:699px){
+        .blog-cards{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+          grid-gap: 0.5rem;
+            padding: 1rem;
+            align-items: center;
+            width: 950.2px;
+            height:1600.9px;
+        }
+    }
+       .blog-card1{
+         /* margin-top: 1rem; */
+         margin-left: 0.6rem;
+         height: 370px;
+         width: 240px; 
+         border: 1px solid white;
+         box-shadow: 1px 1px 8px gray;
+       }
+       .blog-pics{
+          height: 210px;
+          width: 240px;
+        }
+        hr{
+          background-color: lightgrey;
+        }
+        .blog-detail-section{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .blog-detail-sub{
+          display: flex;
+          gap: 2.5rem;
+          justify-content: center;
+          font-size: 0.55rem;
+        }
+        .blog1{
+          margin-top: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .blog2{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+         .blog-sec{
+          color: gray;
+          font-size: 0.5rem;
+         }
+        .blog-icons{
+          height:10px ;
+          width: 10px;
+        }
+        .blog-para{
+          margin-top: 1.5rem;
+          font-weight: 600;
+          font-size: 1.225rem;
+          max-width: 92%;
+          text-align: left;
+          padding-left: 0.55rem;
+        }
+        .william{
+          color: gray;
+          font-size: 0.75rem;
+        }
+        .blog-footer{
+          display: flex;
+          margin-top: 1.75rem;
+          justify-content: space-between;
+          align-items: center;
+          gap: 5rem;
+        }
+        .view-more{
+          margin-top: 0.5rem;
+          border: 1px solid blue;
+          border-radius: 15px;
+          height: 30px;
+          width: 100px;
+          color: gray;
+          font-size: 0.65rem;
+        }
+     a{
+      text-decoration: none;
+      font-size: 0.85rem;
+     }
+     .newsletter-container{
+      background: #0061E0;
+      height: 120px;
+      width: 1100px;
+      /* margin-top: 2rem; */
+      margin-left: 12rem;
+      display: flex;
+      /* gap: 1rem; */
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      color: white;
+     }
+     .news-head{
+       display: flex;
+       flex-direction: column;
+       color: white;
+       justify-content: center;
+       align-items: right;
+       line-height: 1px;
+     }
+     .news-h2{
+      font-weight: 600;
+      font-size: 2rem;
+      /* margin-top: 4.5rem; */
+      margin-right: 1rem;
+     }
+     .news-h6{
+      margin-top: 2rem;
+    
+     }
+      .subscribe-btn{
+        background: #0D263B;
+        font-size: 0.55rem;
+        color: white;
+        height: 42px;
+        width: 80px;
+        border-radius: 0px 5px 5px 0px ;
+      }
+      .text-area{
+        height: 38px;
+        width: 300px;
+        border-radius:  5px 0px 0px 5px;
+        border: none;
+      }
+      .column-container{
+      background: #0D263B;
+      height: 250px;
+      width: 1100px;
+      /* margin-top: 2rem; */
+      /* margin-left: 17rem; */
+      display: flex;
+      gap:2rem;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      color: white;
+      }
+      .footer-container{
+      background: #0D263B;
+      height: 250px;
+      width: 1100px;
+      /* margin-top: 2rem; */
+      margin-left: 12rem;
+      /* display: flex; */
+      gap: 1rem;
+      /* justify-content: center;
+      align-items: center; */
+      font-weight: 600;
+      color:lightgray;
+      }
+
+      .first-column{
+        display: flex;
+        gap: 1rem;
+        width: 22rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer-logo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.5rem;
+      }
+       .footer-logo-img1{
+        width: 40px;
+        height: 50px;
+ 
+      }
+      .first-column-text{
+        padding-left: 3.75rem;
+        text-align: left;
+        font-size: 0.75rem;
+        max-width: 70%;
+        color: lightgray;
+      }
+      .second-coulmn{
+        width: 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        color:lightgray;
+      }
+      .second-column-links{
+        color:lightgray;
+      }
+      .third-column{
+        padding-top: 0.85rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        /* gap: 0.3rem; */
+      }
+   .first-coulmn-h2,.second-coulmn-h2,.third-coulmn-h2 .fourth-coulmn-h2{
+        font-size: 1.45rem;
+      }
+      .third-column-para{
+        margin-top: 1rem;
+        /* padding-bottom: 0.2rem; */
+        font-size: 0.65rem;
+        font-weight: 800;
+      }
+      .fourth-column{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+        gap: 2rem;
+      }
+      .footer-foot{
+        padding: 1.5rem;
+        display: flex;
+        gap: 28rem;
+        justify-content:center;
+        align-items: center;
+        background-color:#0D263B ;
+        font-size: 0.65rem;
+        color:lightgray;
+
+      }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="logo-box">
+            <img src="icons/nav_vector.png" alt="vector image" class="logo-img">
+            <span class="logo-text">Houzing</span>
+        </div>
+        <!-- <div class="nav-items"> -->
+            <a href="#" class="link">Home</a>
+            <a href="#" class="links">Projects</a>
+            <a href="#" class="links">Blogs</a>
+            <a href="#" class="links" >About</a>
+            <a href="#" class="links">Contact</a>
+        <!-- </div> -->
+            <img src="icons/Search.png" alt="search" class="search-img">
+            <button class="start-button"> Get Started</button>
+    </header>
+
+    <!-- hero-section -->
+    <div class="hero-container">
+        <div class="left-container">
+                <h1 class="left-heading">Discover A Place 
+                You'll Love to Live</h1>
+            <p class="left-desc">Homie is a real estate soluation that gives you the local scoop about homes.
+                Search confidently with your trusted source of homes for sale or rent.</p> 
+         <button class="enquiry-btn">Make An Enquiry</button>
+        </div>
+        <div class="right-container">
+            <img src="img/home.jpeg" alt="home" class="home-img">
+            <div class="custom">
+              <img src="icons/star2.jpg" alt="rating" class="star-hero">
+                <p class="custom-text">Customer Rating 4.9</p> 
+            </div>
+              
+            
+            <div class="right-text">
+                <span>Buy Your Dream Home</span>
+                <p class="plus">80+</p>
+                <p>Home Available</p>
+                <button class="detail-btn">View Details</button>
+
+            </div>
+        </div>
+        </div>   
+ <!-- search section -->
+ <div class="search-container">
+    <div class="search-content">
+    <select name="choice-location" id="loc">
+      <option value="Choice Location">Choice Location<option> 
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Goa">Goa</option>
+        <option value="Benglore">Banglore</option>
+        <option value="Hyderabad">Hyderabad</option>
+    </select>
+    <select name="Bedrooms" id="rooms">
+        <option value="choose">Rooms</option>
+        <option value="one" >One</option>
+        <option value="Two">Two</option>
+        <option value="Three">Three</option>
+        <option value="four">Four</option>
+    </select>
+    
+    <select name="rent" id="rent">
+        <option value="For Rent">For Rent</option>
+        <option value="5k">5k</option>
+        <option value="10k">10k</option>
+        <option value="20k">20k</option>
+        <option value="25k">25k</option>
+    </select>
+    <div class="button-section">
+        <img src="icons/Search.png" alt="search" class="img1">
+        <span class="btn-search">Search</span>
+    </div>
+    </div>
+ </div>
+    
+<!--  feature Section -->
+<div class="about-us">
+    <div class="about-left">
+        <img src="img/stairs.jpeg" alt="stairs" class="stairs-img">
+        <div class="left-text">
+            <img src="icons/trophy.png" alt="trophy" class="img-trophy">
+            <p class="award">National
+                Real Estate
+                Awards<p>
+            <p class="analysis">Analysis</p>
+    </div>
+    </div>
+  <div class="about-right">
+   
+     <div class="about-righttext">
+        <a  class="aboutanchor"href="about">About-Us</a> 
+        <h1  class="about-heading">We're on a Mission to Change
+            View of RealEstate Field.</h1>
+        <p class="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit ux sed eiusmod tempor
+            incididunt ut labore et dolore.enim admix minim veniam quis nostrud.</p>
+     </div>
+   <div class="features">
+      <div class="feature1">
+         <img src="icons/house 1 (Traced).png" alt="house1">
+          <h3>Modern Villa</h3>
+         <p>When unknown printer took galley
+         of type and scrambled.</p>
+     </div>
+      <div class="feature2">
+         <img src="icons/money 1 (Traced).png" alt="money1">
+         <h3>Secure Payment</h3>
+          <p>When unknown printer took galley
+          of type and scrambled.</p>
+       </div>
+   </div>
+   <a href="#" class="learnmore" >Learn More</a>
+ </div>
+</div>
+<!-- service-container -->
+<div class="service-container">
+    <div class="service-heading">
+        <p class="heading1">OUR SERVICES</p>
+        <h2 class="service-head">Our Main Focus</h2>
+    </div>
+ <div class="service-card">
+        <!-- card1 -->
+      <div class="service-card1">
+        <img src="icons/buy-home 1 (Traced).png" alt="buy home"  class="service-icons">
+          <div class="service-text">
+           <h3 class="card-headings1">Buy a Home</h3> 
+           <p class="service-para">over 1 million+ homes for sale available on the
+            website, we can match you with a house you will
+            want to call home.</p>
+            <p class="arrow">Find A Home</p>
+          </div>
+      </div>
+      <!-- card2 -->
+      <div class="service-card2">
+        <img src="icons/house (2) 1 (Traced).png" alt="buy home" class="service-icons">
+          <div class="service-text">
+           <h3 class="card-headings">Rent a Home</h3> 
+           <p  class="service-para">over 1 million+ homes for sale available on the
+            website, we can match you with a house you will
+            want to call home.</p>
+            <p class="arrow">Find A Home</p>
+          </div>
+      </div>
+    <!-- card3 -->
+    <div class="service-card3">
+        <img src="icons/sale 1 (Traced).png" alt="buy home"class="service-icons ">
+          <div class="service-text">
+           <h3  class="card-headings">Sell a Home</h3> 
+           <p  class="service-para">over 1 million+ homes for sale available on the
+            website, we can match you with a house you will
+            want to call home.</p>
+            <p class="arrow">Find A Home</p>
+          </div>
+      </div>
+</div>
+ <div class="services-group">
+    <div class="group1">
+        <img src="icons/excavator (Traced).png" alt="excavator" class="group-icons">
+        <h2  class="group-headings">260+</h2>
+        <p class="group-para">Total Construction</p>
+    </div>
+    <div class="group2">
+        <img src="icons/interior-design (Traced).png" alt="excavator"class="group-icons">
+        <h2 class="group-headings">110+</h2>
+        <p class="group-para">Apartio Rooms</p>
+    </div>
+    <div class="group3">
+        <img src="icons/office (Traced).png" alt="excavator"class="group-icons">
+        <h2  class="group-headings">190+</h2>
+        <p class="group-para">Apartments Sold</p>
+    </div>
+    <div class="group4">
+        <img src="icons/map (Traced).png" alt="excavator"class="group-icons">
+        <h2  class="group-headings">560+</h2>
+        <p class="group-para">Total Area Sqr</p>
+    </div>
+ </div>
+</div>
+</div>
+<!-- agent-container -->
+<div class="agent-container">
+    <div class="agent-heading">
+        <p class="agent-heading1">EXPERTISE IS HERE</p>
+        <h2 class="agent-head">Our Growing Agents</h2>
+    </div>
+    <div class="agent-card">
+        <!-- agent-card 1 -->
+        <div class="profile1">
+                <img src="img/agent1.jpg" alt="person1"  class="agent-img1">
+            <div class="agent-sticky1">
+                <p class="sticky-text1">3 years Experience</p> 
+            </div>
+          <div class="agent-text">
+           <h3 class="agent-h">David Wing</h3> 
+           <p class="agent-p">Eco Builders</p>
+           </div>
+           <div class="call-area">
+            <img src="icons/Call.png" alt="call" class="call-icon">
+            <span class="number">Call: +1 234 567 890</span>
+           </div>
+            
+        </div>
+          <!-- agent card 2 -->
+          <div class="profile2">
+            <img src="img/agent2.jpg" alt="person1"  class="agent-img2">
+            <!-- <div class="agent-sticky2">
+                <p class="sticky-text">4 years Experience</p> 
+            </div> -->
+           <div class="agent-text">
+             <h3 class="agent-h">Mike hue </h3> 
+             <p class="agent-p">Architect Dessign</p>
+             <div class="call-area">
+               <img src="icons/Call.png" alt="call" class="call-icon">
+                <span class="number">Call: +1 234 567 890</span>
+             </div>
+           </div>
+        </div>
+        <!-- agent card 3 -->
+        <div class="profile3">
+            <img src="img/agent3.jpg" alt="person1"  class="agent-img3">
+            <!-- <div class="agent-sticky3">
+                <p class="sticky-text">3 years Experience</p> 
+            </div> -->
+         <div class="agent-text">
+            <h3 class="agent-h">Ela Steven</h3> 
+            <p class="agent-p">Interior Design</p>
+             <div class="call-area">
+              <img src="icons/Call.png" alt="call" class="call-icon">
+              <span class="number">Call: +1 234 567 890</span>
+             </div>
+          </div>
+        </div>
+         <!-- agent card 4 -->
+         <div class="profile4">
+            <img src="img/agent4.jpg" alt="person1"  class="agent-img4">
+            <!-- <div class="agent-sticky4">
+                <p class="sticky-text">5 years Experience</p> 
+            </div> -->
+            <div class="agent-text">
+              <h3 class="agent-h">BilliButcher</h3> 
+              <p class="agent-p">Sweet Home</p>
+              <div class="call-area">
+                <img src="icons/Call.png" alt="call" class="call-icon">
+                <span class="number">Call: +1 234 567 890</span>
+               </div>
+            </div>
+         </div>
+   </div>
+   <div class="agent-group">
+    <img src="icons/fluent_people-community-28-filled.png" alt="people" class="people-icon">
+   <div>
+    <h3 class="agenth">Become an Agent</h3>
+    <p class="agentp">Agent hen an unknown printer took a galley scramble</p>
+   </div>
+   <button class="join-btn">Join Now</button>
+</div>  
+</div> 
+<!-- feture-listing -->
+<div class="featured-listening">
+    <div class="features-heading">
+      <h4 class="h4-text">FEATURED LISTING</h4>
+      <h2 class="h2-text">We Bring Dream Homes
+        To Reality</h2>
+    </div>
+    <div class="home-cards">
+      <!-- home-card1 -->
+     <div class="home-card1">
+         <div class="image-section">
+           <img src="img/1.jpeg" alt="home" class="home-pics">
+           <span class="for-sale">For sale</span>
+         </div>
+         <div class="detail-section">
+           <h4 class="home-head">1963 S Crescent Heights Blvd</h4>
+           <div class="loc-text">
+            <img src="icons/loc.png" alt="vector" class="vector">
+            <span class="sec">Hills, CA 90210</span>
+           </div>
+          </div>
+           <hr>
+        <div class="detail-section-1">
+          <div class="detail-section-a">
+            <img src="icons/menu.png" alt="menu" class="b-icons">
+            <span>2400 Square Feet</span>
+            <img src="icons/bed.png" alt="bedrooms"class="b-icons">
+            <span class="b1-text">20 Bedrooms</span>
+          </div>
+          <div class="detail-section-b">
+            <img src="icons/car.png" alt="car" class="b-icons">
+            <span>2 Garages</span>
+            <img src="icons/bathtub.png" alt="bathtub" class="b1-icons">
+            <span class="b2-text">8 Bathrooms</span>
+          </div>  
+       </div>
+          <hr>
+          <div class="detail-section-2">
+            <div class="detail-section-c">
+              <img src="icons/icon1.png" alt="" class="b-icons">
+              <span>Michel Smith</span>
+              <img src="icons/time.png" alt="time" class="b2-icons">
+              <span class="b3-text">1 days ago</span>
+             </div>
+          </div>  
+          <button class="rent-btn">$5,304,000</button>
+      </div> 
+      <!-- home-card2 -->
+     <div class="home-card1">
+      <div class="image-section">
+        <img src="img/2.jpeg" alt="home" class="home-pics">
+      </div>
+      <div class="detail-section">
+        <h4 class="home-head">1963 S Crescent Heights Blvd</h4>
+        <div class="loc-text">
+         <img src="icons/loc.png" alt="vector" class="vector">
+         <span class="sec">Hills, CA 90210</span>
+        </div>
+       </div>
+        <hr>
+     <div class="detail-section-1">
+       <div class="detail-section-a">
+         <img src="icons/menu.png" alt="menu" class="b-icons">
+         <span>2400 Square Feet</span>
+         <img src="icons/bed.png" alt="bedrooms"class="b-icons">
+         <span class="b1-text">20 Bedrooms</span>
+       </div>
+       <div class="detail-section-b">
+         <img src="icons/car.png" alt="car" class="b-icons">
+         <span>2 Garages</span>
+         <img src="icons/bathtub.png" alt="bathtub" class="b1-icons">
+         <span class="b2-text">8 Bathrooms</span>
+       </div>  
+    </div>
+       <hr>
+       <div class="detail-section-2">
+         <div class="detail-section-c">
+           <img src="icons/icon1.png" alt="" class="b-icons">
+           <span>Michel Smith</span>
+           <img src="icons/time.png" alt="time" class="b2-icons">
+           <span class="b3-text">1 days ago</span>
+          </div>
+       </div>  
+       <button class="rent-btn">$5,304,000</button>
+   </div> 
+ <!-- home-card3 -->
+ <div class="home-card1">
+  <div class="image-section">
+    <img src="img/3.jpeg" alt="home" class="home-pics">
+  </div>
+  <div class="detail-section">
+    <h4 class="home-head">1963 S Crescent Heights Blvd</h4>
+    <div class="loc-text">
+     <img src="icons/loc.png" alt="vector" class="vector">
+     <span class="sec">Hills, CA 90210</span>
+    </div>
+   </div>
+    <hr>
+ <div class="detail-section-1">
+   <div class="detail-section-a">
+     <img src="icons/menu.png" alt="menu" class="b-icons">
+     <span>2400 Square Feet</span>
+     <img src="icons/bed.png" alt="bedrooms"class="b-icons">
+     <span class="b1-text">20 Bedrooms</span>
+   </div>
+   <div class="detail-section-b">
+     <img src="icons/car.png" alt="car" class="b-icons">
+     <span>2 Garages</span>
+     <img src="icons/bathtub.png" alt="bathtub" class="b1-icons">
+     <span class="b2-text">8 Bathrooms</span>
+   </div>  
+</div>
+   <hr>
+   <div class="detail-section-2">
+     <div class="detail-section-c">
+       <img src="icons/icon1.png" alt="" class="b-icons">
+       <span>Michel Smith</span>
+       <img src="icons/time.png" alt="time" class="b2-icons">
+       <span class="b3-text">1 days ago</span>
+      </div>
+   </div>  
+   <button class="rent-btn">$5,304,000</button>
+  </div> 
+    <!-- home-card 4 -->
+    <div class="home-card1">
+      <div class="image-section">
+        <img src="img/4.jpeg" alt="home" class="home-pics">
+      </div>
+      <div class="detail-section">
+        <h4 class="home-head">1963 S Crescent Heights Blvd</h4>
+        <div class="loc-text">
+         <img src="icons/loc.png" alt="vector" class="vector">
+         <span class="sec">Hills, CA 90210</span>
+        </div>
+       </div>
+        <hr>
+     <div class="detail-section-1">
+       <div class="detail-section-a">
+         <img src="icons/menu.png" alt="menu" class="b-icons">
+         <span>2400 Square Feet</span>
+         <img src="icons/bed.png" alt="bedrooms"class="b-icons">
+         <span class="b1-text">20 Bedrooms</span>
+       </div>
+       <div class="detail-section-b">
+         <img src="icons/car.png" alt="car" class="b-icons">
+         <span>2 Garages</span>
+         <img src="icons/bathtub.png" alt="bathtub" class="b1-icons">
+         <span class="b2-text">8 Bathrooms</span>
+       </div>  
+    </div>
+       <hr>
+       <div class="detail-section-2">
+         <div class="detail-section-c">
+           <img src="icons/icon1.png" alt="" class="b-icons">
+           <span>Michel Smith</span>
+           <img src="icons/time.png" alt="time" class="b2-icons">
+           <span class="b3-text">1 days ago</span>
+          </div>
+       </div>  
+       <button class="rent-btn">$5,304,000</button>
+   </div> 
+    <!-- home-card 5-->
+    <div class="home-card1">
+      <div class="image-section">
+        <img src="img/5.jpeg" alt="home" class="home-pics">
+      </div>
+      <div class="detail-section">
+        <h4 class="home-head">1963 S Crescent Heights Blvd</h4>
+        <div class="loc-text">
+         <img src="icons/loc.png" alt="vector" class="vector">
+         <span class="sec">Hills, CA 90210</span>
+        </div>
+       </div>
+        <hr>
+     <div class="detail-section-1">
+       <div class="detail-section-a">
+         <img src="icons/menu.png" alt="menu" class="b-icons">
+         <span>2400 Square Feet</span>
+         <img src="icons/bed.png" alt="bedrooms"class="b-icons">
+         <span class="b1-text">20 Bedrooms</span>
+       </div>
+       <div class="detail-section-b">
+         <img src="icons/car.png" alt="car" class="b-icons">
+         <span>2 Garages</span>
+         <img src="icons/bathtub.png" alt="bathtub" class="b1-icons">
+         <span class="b2-text">8 Bathrooms</span>
+       </div>  
+    </div>
+       <hr>
+       <div class="detail-section-2">
+         <div class="detail-section-c">
+           <img src="icons/icon1.png" alt="" class="b-icons">
+           <span>Michel Smith</span>
+           <img src="icons/time.png" alt="time" class="b2-icons">
+           <span class="b3-text">1 days ago</span>
+          </div>
+       </div>  
+       <button class="rent-btn">$5,304,000</button>
+   </div> 
+     <!-- home-card 6 -->
+     <div class="home-card1">
+      <div class="image-section">
+        <img src="img/6.jpeg" alt="home" class="home-pics">
+      </div>
+      <div class="detail-section">
+        <h4 class="home-head">1963 S Crescent Heights Blvd</h4>
+        <div class="loc-text">
+         <img src="icons/loc.png" alt="vector" class="vector">
+         <span class="sec">Hills, CA 90210</span>
+        </div>
+       </div>
+        <hr>
+     <div class="detail-section-1">
+       <div class="detail-section-a">
+         <img src="icons/menu.png" alt="menu" class="b-icons">
+         <span>2400 Square Feet</span>
+         <img src="icons/bed.png" alt="bedrooms"class="b-icons">
+         <span class="b1-text">20 Bedrooms</span>
+       </div>
+       <div class="detail-section-b">
+         <img src="icons/car.png" alt="car" class="b-icons">
+         <span>2 Garages</span>
+         <img src="icons/bathtub.png" alt="bathtub" class="b1-icons">
+         <span class="b2-text">8 Bathrooms</span>
+       </div>  
+    </div>
+       <hr>
+       <div class="detail-section-2">
+         <div class="detail-section-c">
+           <img src="icons/icon1.png" alt="" class="b-icons">
+           <span>Michel Smith</span>
+           <img src="icons/time.png" alt="time" class="b2-icons">
+           <span class="b3-text">1 days ago</span>
+          </div>
+       </div>  
+       <button class="rent-btn">$5,304,000</button>
+   </div> 
+<!-- div of card -->
+ </div>
+<!-- div of fetaured listing -->
+ </div>
+ <!-- Testimonial section -->
+ <div class="testimonial-container">
+  <img src="icons/quote-up.png" alt="quotes" class="quote-up">
+  <div class="testimonial-heading">
+      <h3 class="test-h3">OUR TESTIMONIALS</h3>
+      <h2 class="test-h2">What Our Customers Says</h2>
+  </div>
+  <div class="testimonial-cards">
+      <div class="class-1">
+        <div class="class-1a">
+          <div class="class-btext">
+              I could probably go into sales for you. I
+              am completely blown away. After
+              using SEO my business skyrocketed!
+              The very best. 
+          </div>
+        </div>
+      </div>
+      <div class="class-1">
+          <div class="class-1a">
+           <div class="class-btext">
+              I received very good care at Clinicity
+              Clinic, and the doctor took the time
+              to explain the medications he was
+              prescribing and why.
+           </div>
+          </div>
+      </div>
+      <div class="class-1">
+        <div class="class-1a">
+          <div class="class-btext">
+              I have insurance and still go to this
+              to do and I don’t need to make an
+              clinic. The cost is in line with my copy
+               appointment.
+          </div>
+         </div>
+      </div>
+      <!-- card div -->
+  </div>
+  <div class="circle-section">
+     <img src="icons/Ellipse 986.png" alt="circle" class="circle1">
+     <img src="icons/Ellipse 986.png" alt="circle" class="circle2">
+     <img src="icons/Ellipse 986.png" alt="circle" class="circle2">
+     <img src="icons/Ellipse 986.png" alt="circle" class="circle2">
+     <img src="icons/Ellipse 986.png" alt="circle" class="circle2">
+  </div>
+  <img src="icons/quote-down.png" alt="down-qotes" class="quote-down">
+</div>
+  <!-- property-section -->
+  <div class="properties-container">
+    <div class="property-head">
+      <h3>PROPERTIES</h3>
+      <h2>Our Popular properties</h2>
+    </div>
+    <div class="property-card">
+      <!--  property card1 -->
+      <div class="property-card1">
+        <img src="img/p1.jpeg" alt="image" class="property-img">
+        <div class="property-headings">
+          <p class="property-headings-1">$300,000</p>
+          <p class="property-headings-2">5232 North Carolina Ave. 21BC</p>
+          <h2 class="property-headings-3">California, USA</h2>
+        </div>
+        <div class="property-img-text">
+          <img src="icons/bed.png" alt="" class="pro-icon">
+          <span>4 Beds</span>
+          <img src="icons/bathtub.png" alt="" class="pro-icon">
+          <span>3 Baths</span>
+        </div>
+        <div class="property-footer">
+          <img src="img/customer1.png" alt="customer1" class="customer-1">
+          <div class="working">
+            <h3 class="customer-1-name">Adam Smith</h3>
+          <h5 class="customer-1-work">Estate Agents</h5>
+          </div>
+          
+        </div>
+      </div>
+       <!--  property card2 -->
+       <div class="property-card1">
+        <img src="img/p2.jpeg" alt="image" class="property-img">
+        <div class="property-headings">
+          <p class="property-headings-1">$300,000</p>
+          <p class="property-headings-2">5232 North Carolina Ave. 21BC</p>
+          <h2 class="property-headings-3">California, USA</h2>
+        </div>
+        <div class="property-img-text">
+          <img src="icons/bed.png" alt="" class="pro-icon">
+          <span>4 Beds</span>
+          <img src="icons/bathtub.png" alt="" class="pro-icon">
+          <span>3 Baths</span>
+        </div>
+        <div class="property-footer">
+          <img src="img/customer2.png" alt="customer1" class="customer-1">
+          <div class="working">
+          <h3 class="customer-1-name1">Butcher Bose</h3>
+          <h5 class="customer-1-work">Estate Agents</h5>
+          </div>
+        </div>
+      </div>
+       <!--  property card3 -->
+       <div class="property-card1">
+        <img src="img/p3.jpeg" alt="image" class="property-img">
+        <div class="property-headings">
+          <p class="property-headings-1">$300,000</p>
+          <p class="property-headings-2">5232 North Carolina Ave. 21BC</p>
+          <h2 class="property-headings-3">California, USA</h2>
+        </div>
+        <div class="property-img-text">
+          <img src="icons/bed.png" alt="" class="pro-icon">
+          <span>4 Beds</span>
+          <img src="icons/bathtub.png" alt="" class="pro-icon">
+          <span>3 Baths</span>
+        </div>
+        <div class="property-footer">
+          <img src="img/customer3.png" alt="customer1" class="customer-1">
+          <div class="working">
+          <h3 class="customer-1-name1">William Hue</h3>
+          <h5 class="customer-1-work">Estate Agents</h5>
+          </div>
+        </div>
+      </div>
+      <!-- div of card -->
+    </div>
+     <div class="p-circle">
+      <img src="icons/Ellipse 986.png" alt="circle" class="p1">
+      <img src="icons/Ellipse 986.png" alt="circle">
+      <img src="icons/Ellipse 986.png" alt="circle">
+     </div>
+  </div>
+  <!-- partners section -->
+   <div class="partner-container">
+    <div class="part1">  
+        <img src="icons/Vector.png" alt="vector" class="partner-images1">
+      <h2 class="part-h2">HEXA HOUSE</h2>
+     <h5> YOUR TAGLINE HERE</h5>
+    </div>
+    <div class="part2">
+      <img src="icons/vector2.png" alt="vector" class="partner-images">
+      <h2 class="part-h2">TECH  HOUSE</h2>
+      <h5>YOUR TAGLINE HERE</h5>
+    </div>
+    <div class="part3">
+      <img src="icons/vector3.png" alt="vector" class="partner-images">
+     <h2 class="part-h2">REALESTATE</h2>
+     <h5>YOUR TAGLINE HERE</h5>
+    </div>
+    <div class="part4">
+      <img src="icons/Vector4.png" alt="vector" class="partner-images">
+     <h2 class="part-h2">REALESTATE</h2>
+     <h6>YOUR TAGLINE HERE</h6>
+    </div>
+    <div class="part5">
+      <img src="icons/vector5.png" alt="vector" class="partner-images5">
+      <h2 class="part-h2">REALESTATE</h2>
+      <h5>YOUR TAGLINE HERE</h5>
+    </div>
+   </div>
+   <!-- facilities section -->
+    <div class="facilities-container">
+      <div class="facility-left">
+        <img src="img/2.jpeg" alt="" class="facility-img">
+        <img src="icons/Play Button.png" alt="" class="facility-img1">
+      </div>
+      <div class="facility-right">
+         <h4 class="f1">OUR FACILITIES</h4>
+         <h3 class="f2">The experts in local and
+          international property</h3>
+          <p class="f3">Agent hen an unknown printer took a galley of type and scramble
+            d it to make a type specimen book. It has survived not only five
+            centuries, but also the leap into electronic.</p>
+      <div class="list-of-facilities">
+        <div class="list-of-facilities-1">
+         <ul>
+          <li>Parking Space</li>
+          <li>Swimming Pool</li>
+          <li>Private Security</li>
+         </ul>
+        </div>
+        <div class="list-of-facilities-2">
+        <ul>
+          <li>Medical Center</li>
+          <li>Kids Playland</li>
+          <li>Library Area</li>
+        </ul>
+        </div>
+      </div>
+      <p class="read-more">Read More</p>
+      </div>
+  </div>
+  <!-- blog section -->
+  <div class="blog-container">
+    <div class="blog-heading">
+      <h4 class="blog-text">BLOGS & NEWS</h4>
+      <h2 class="blog-h2">Leatest News Feed </h2>
+    </div>
+    <div class="blog-cards">
+      <!-- home-card1 -->
+     <div class="blog-card1">
+         <div class="blog-image-section">
+           <img src="img/p1.jpeg" alt="home" class="blog-pics">
+         </div>
+         <div class="blog-detail-section">
+          <div class="blog-detail-sub">
+            <div class="blog1">
+              <img src="icons/icon1.png" alt="icon1" class="blog-icons">
+              <span class="william">William Seklo</span>
+            </div>
+            <div class="blog2">
+              <img src="icons/icon3.png" alt="icon3">
+              <span class="william">Apartment</span>
+            </div>
+          </div>
+               <p class="blog-para">New Apartment Nice in the
+                Best Canadian Cities</p>
+            <hr>
+          <div class="blog-footer">
+            <div class="footer-a">
+            <img src="icons/calender.png" alt="vector" class="vector">
+            <span class="blog-sec">July 10, 2022</span>
+            </div>
+            <div class="footerb">
+            <a href="#">Read More</a>
+           </div>
+         </div>
+      </div>
+      <!-- card1 -->
+     </div> 
+     <!-- home-card2 -->
+     <div class="blog-card1">
+      <div class="blog-image-section">
+        <img src="img/f2.jpeg" alt="home" class="blog-pics">
+      </div>
+      <div class="blog-detail-section">
+       <div class="blog-detail-sub">
+         <div class="blog1">
+           <img src="icons/icon1.png" alt="icon1" class="blog-icons">
+           <span class="william">William Seklo</span>
+         </div>
+         <div class="blog2">
+           <img src="icons/icon3.png" alt="icon3">
+           <span class="william">Apartment</span>
+         </div>
+       </div>
+            <p class="blog-para">New Apartment Nice in the
+             Best Canadian Cities</p>
+         <hr>
+       <div class="blog-footer">
+         <div class="footer-a">
+         <img src="icons/calender.png" alt="vector" class="vector">
+         <span class="blog-sec">July 10, 2022</span>
+         </div>
+         <div class="footerb">
+         <a href="#">Read More</a>
+        </div>
+      </div>
+   </div>
+   <!-- card2 -->
+  </div> 
+
+  <!-- home-card3 -->
+  <div class="blog-card1">
+    <div class="blog-image-section">
+      <img src="img/f46.jpg" alt="home" class="blog-pics">
+    </div>
+    <div class="blog-detail-section">
+     <div class="blog-detail-sub">
+       <div class="blog1">
+         <img src="icons/icon1.png" alt="icon1" class="blog-icons">
+         <span class="william">William Seklo</span>
+       </div>
+       <div class="blog2">
+         <img src="icons/icon3.png" alt="icon3">
+         <span class="william">Apartment</span>
+       </div>
+     </div>
+          <p class="blog-para">New Apartment Nice in the
+           Best Canadian Cities</p>
+       <hr>
+     <div class="blog-footer">
+       <div class="footer-a">
+       <img src="icons/calender.png" alt="vector" class="vector">
+       <span class="blog-sec">July 10, 2022</span>
+       </div>
+       <div class="footerb">
+       <a href="#">Read More</a>
+      </div>
+    </div>
+ </div>
+ <!-- card3 -->
+</div> 
+<!-- home-card4 -->
+<div class="blog-card1">
+  <div class="blog-image-section">
+    <img src="img/f45.jpg" alt="home" class="blog-pics">
+  </div>
+  <div class="blog-detail-section">
+   <div class="blog-detail-sub">
+     <div class="blog1">
+       <img src="icons/icon1.png" alt="icon1" class="blog-icons">
+       <span class="william">William Seklo</span>
+     </div>
+     <div class="blog2">
+       <img src="icons/icon3.png" alt="icon3">
+       <span class="william">Apartment</span>
+     </div>
+   </div>
+        <p class="blog-para">New Apartment Nice in the
+         Best Canadian Cities</p>
+     <hr>
+   <div class="blog-footer">
+     <div class="footer-a">
+     <img src="icons/calender.png" alt="vector" class="vector">
+     <span class="blog-sec">July 10, 2022</span>
+     </div>
+     <div class="footerb">
+     <a href="#">Read More</a>
+    </div>
+  </div>
+</div>
+<!-- card4 -->
+</div> 
+<!-- home-card5 -->
+<div class="blog-card1">
+  <div class="blog-image-section">
+    <img src="img/p3.jpeg" alt="home" class="blog-pics">
+  </div>
+  <div class="blog-detail-section">
+   <div class="blog-detail-sub">
+     <div class="blog1">
+       <img src="icons/icon1.png" alt="icon1" class="blog-icons">
+       <span class="william">William Seklo</span>
+     </div>
+     <div class="blog2">
+       <img src="icons/icon3.png" alt="icon3">
+       <span class="william">Apartment</span>
+     </div>
+   </div>
+        <p class="blog-para">New Apartment Nice in the
+         Best Canadian Cities</p>
+     <hr>
+   <div class="blog-footer">
+     <div class="footer-a">
+     <img src="icons/calender.png" alt="vector" class="vector">
+     <span class="blog-sec">July 10, 2022</span>
+     </div>
+     <div class="footerb">
+     <a href="#">Read More</a>
+    </div>
+  </div>
+</div>
+<!-- card5-->
+</div> 
+<!-- home-card6 -->
+<div class="blog-card1">
+  <div class="blog-image-section">
+    <img src="img/f47.jpg" alt="home" class="blog-pics">
+  </div>
+  <div class="blog-detail-section">
+   <div class="blog-detail-sub">
+     <div class="blog1">
+       <img src="icons/icon1.png" alt="icon1" class="blog-icons">
+       <span class="william">William Seklo</span>
+     </div>
+     <div class="blog2">
+       <img src="icons/icon3.png" alt="icon3">
+       <span class="william">Apartment</span>
+     </div>
+   </div>
+        <p class="blog-para">New Apartment Nice in the
+         Best Canadian Cities</p>
+     <hr>
+   <div class="blog-footer">
+     <div class="footer-a">
+     <img src="icons/calender.png" alt="vector" class="vector">
+     <span class="blog-sec">July 10, 2022</span>
+     </div>
+     <div class="footerb">
+     <a href="#">Read More</a>
+    </div>
+  </div>
+</div>
+<!-- card1 -->
+</div> 
+     <!-- crads div  -->
+   </div>
+   <button class="view-more">View more</button>
+   <!-- container div -->
+</div>
+<!-- Newsletter section -->
+  <div class="newsletter-container">
+    <div class="news-head">
+      <h2 class="news-h2">Join Our Newsletter Now</h2>
+      <h6 class="news-h6">Register now to get updates on promotions...</h6>
+    </div>
+      <input type="text" name="text1" placeholder="Enter your email To Subscribe..." class="text-area">
+      <button class="subscribe-btn">Subscribe</button>
+
+    <!-- container div -->
+  </div>
+<!-- footer section -->
+ <div class="footer-container">
+  <div class="column-container">
+  <div class="first-column">
+   <div class="footer-logo">
+    <img src="icons/nav_vector.png" alt="nav_vector" class="footer-logo-img1">
+    <span class="foot-text">Houzing</span>
+   </div>
+   <p class="first-column-text">
+    Lorem Ipsum is simply dummy text of the
+    dummy text of the printing.
+    and typesetting industry. Lorem Ipsum is
+   </p>
+   <div class="first-column-icons">
+    <img src="icons/fb.png" alt="fb" class="column-icons-img">
+    <img src="icons/akar-icons_linkedin-v2-fill.png" alt="linkedin" class="column-icons-img">
+    <img src="icons/ci_instagram.png" alt="instagram" class="column-icons-img">
+    <img src="icons/ant-design_twitter-outlined.png" alt="twitter" class="column-icons-img">
+   </div>
+  </div>
+  <div class="second-coulmn">
+    <h2 class="second-coulmn-h2">Quick Links</h2>
+    <a href="#"class="second-column-links">Home</a>
+    <a href="#"class="second-column-links">About-Us</a>
+    <a href="#"class="second-column-links">Blog</a>
+    <a href="#"class="second-column-links">FAQ</a>
+    <a href="#"class="second-column-links">Services</a>
+  </div>
+  <div class="third-column">
+   <h2 class="third-coulmn-h2">Services</h2>
+   <p class="third-column-para">Wish List</p>
+   <p class="third-column-para">Login</p>
+   <p class="third-column-para"> Sumbmit a Request </p>
+   <p class="third-column-para">Appointment</p>
+   <p class="third-column-para">Promotional Offers</p>
+  </div>
+  <div class="fourth-column">
+    <h2 class="fourth-coulmn-h2">Contract</h2>
+    <div class="fourth-column-1">
+    <img src="icons/loc2.png" alt="">
+    <span>124 Brooklyn, New York 
+      United States</span>
+    </div>
+    <div class="fourth-column-2">
+      <img src="icons/mobile.png" alt="">
+      <span>+11 2 3456 7890</span>
+    </div>
+    <div class="fourth-column-3">
+      <img src="icons/email.png" alt="">
+      <span>info@houzing.com</span>
+    </div>
+    </div>
+</div>
+<div class="footer-foot">
+  <span class="copyright">© Copyright Medih 2022 All Right Reserved.</span>
+  <span class="terms of use">Terms of use <hr>
+     Privacy policy</span>
+ 
+</div>
+</div>
+</body>
+</html>
